@@ -1,17 +1,22 @@
-# @author: ali.akgun
-# @to do:
-# @bugs:
-# @brief Differention gui
-# @date: 23.12.2020
+#@author: ali akgün
+#@date: 30.12.2020
+#@brief: Gui application of forward_differention.py
+#@to do: help section !!!
+#about section
+#graph of input and output function.
+#change variable names !!!
+#@brief:
+#
 
 from tkinter import *
 
-# create window object
-
 app = Tk()
 
-app.title("Differention")
-app.geometry("700x350")
+app.title("forward differention")
+app.geometry("")
 
-# start program
-app.mainloop()
+part_text = StringVar()
+part_label = Label(app, text = "Function:", font = ("bold", 14), pady = 20)
+part_label.grid(row = 0, column = 0, sticky = W)
+part_entry = Entry(app, textvariable = part_text)
+part_entry.grid(row = 0, column = 1)
